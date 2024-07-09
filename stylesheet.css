@@ -1,0 +1,299 @@
+*{
+  margin: 0; 
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+p {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+
+
+
+
+#main-contain {
+  background-color: black; /* Was originally white */ 
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  color: white; /* To make text white*/
+}
+/* */ 
+
+nav{
+  background-color: black; /* Was originally black*/
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Code */
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li{
+  height: 65px;
+}
+
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 200;
+}
+
+nav li:first-child{
+  margin-right: auto;
+}
+
+
+/* Sidebar Code */
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: black;
+  backdrop-filter: blur(10px);
+  display: none; /* this is the key for JS */ 
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li{
+  width: 100%;
+}
+
+.sidebar a{
+  width: 100%;
+}
+
+
+.menu-button{
+  display: none;
+}
+
+.title{
+  font-size: 1.25em;
+  font-weight: 300;
+}
+
+.title:hover{
+  color: white;
+}
+
+.sidebar a.here{
+  font-weight: 300;
+}
+
+a.here{
+  font-weight: 300;
+}
+
+/* Heading Code */ 
+.heading{
+  text-align: center;
+  margin-top: 130px; 
+  /* formerly 125px */ 
+  margin-bottom: 30px;
+  
+}
+
+.my-name{
+  font-size: 92px; 
+  font-weight: 500;
+}
+
+.my-name-description{
+  font-size: 28px;
+  font-weight: 400;
+}
+
+/* Subheading Code */
+.subheading{
+  text-align: center;
+  margin-top: 125px;
+  margin-bottom: 280px;
+}
+
+.subheading-text{
+  font-size: 20px;
+  margin-bottom: 25px;
+  font-weight: 300;
+  padding: 0 30px 0 30px;
+}
+
+.button-portfolio, .button-contact{
+  /* background-color:white; */
+  background-color: transparent;
+  color: white; /* Was originally black */ 
+  border: 2px solid white; /* Was originally black */ 
+  border-radius: 50px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 10px;
+  transition: opacity 0.15s;
+  font-size: 16px;
+
+
+  padding-top: 12px;
+  padding-bottom: 12px; 
+  padding-left: 15px;
+  padding-right: 16px; 
+  vertical-align: top;
+} 
+
+.button-portfolio:hover, .button-contact:hover{
+  opacity: 0.6;
+  color: rgba(255, 255, 255, 0.891); /* Was originally rgb(24, 24, 24); */ 
+  border: 2px solid rgba(255, 255, 255, 0.891); /* Was originally rgb(24, 24, 24); */ 
+}
+
+
+/* Contact Page */ 
+/* Contact and Portfolio Page Code */ 
+.contact-text, .portfolio-section{
+  margin-top: 80px;
+  margin-bottom: 50px;
+  width: 90%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  overflow-wrap: break-word;
+}
+
+.contact-title, .portfolio-heading{
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.contact-links, .portfolio-text{
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.portfolio-subheading{
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.textbox{
+  width: 500px;
+}
+
+.portfolio-test{
+  padding-bottom: 150px;
+}
+
+/* About Page Styles */
+#photo-me{
+  height: 400px;
+  margin-bottom: 30px;
+}
+
+
+.about-image{
+  display: flex;
+  justify-content: center; 
+}
+
+.about-text{
+  padding-bottom: 150px;
+}
+
+/* Footer styles */
+/* Main content area should take up remaining space */
+.content {
+  flex: 1;
+}
+
+.footer{
+  background-color: black;
+  height: 100px;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: auto;
+}
+
+
+/* Footer icon styles */
+.icon {
+  width: 25px;
+  margin: 15px;
+}
+
+
+
+
+/* Rest of Code */
+
+a{
+  color:rgb(46, 43, 45);
+}
+
+a:hover{
+  color:rgb(93, 87, 90);;
+}
+
+
+/* Media Tags */
+@media(max-width: 600px){
+  
+  .my-name{
+    font-size: 70px;
+  }
+
+  .my-name-description{
+    font-size: 18px;
+    padding: 0 30px 0 30px;
+  }
+
+  .subheading-text{
+    font-size: 16px;
+  }
+
+}
+
+
+@media(max-width: 900px) {
+  /* Every element that has this class will
+  not be visible on screens less than 800px. */   
+
+  .hideOnMobile{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+  }
+}
+
+@media(max-width: 400px){
+  .sidebar{
+    width: 100%;
+  }
+}
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!--Important Meta Tags-->
+  <meta name="author" content="Matthew Vollo">
+  <meta name="description" content="My own portfolio website. Version III">
+  <meta name="keywords" content="HTML, CSS, Javascript">
+
+  <!--Favicon (that was easier than I thought...)-->
+  <link rel="icon" type="image/png" href="mv96.png"> 
+  <title>Matthew Vollo, Website III</title>
+
+  <link rel="canonical" href="index.html">
+  <link rel="stylesheet" href="stylesheet.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Navbar -->
+  <nav> 
+    <ul class="sidebar">
+      <li onclick=hideSidebar()> <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+      <li> <a class="title" href="index.html">Matthew Vollo</a></li>
+      <li> <a class="here" href="index.html">home</a></li>
+      <li> <a href="about.html">about me</a></li>
+      <li> <a href="portfolio.html">portfolio</a></li>
+      <li> <a href="contact.html">contact</a></li>
+    </ul>
+    <ul>
+      <li> <a class="title" href="index.html">Matthew Vollo</a></li>
+      <li class="hideOnMobile"> <a class="here" href="index.html">home</a></li>
+      <li class="hideOnMobile"> <a href="about.html">about me</a></li>
+      <li class="hideOnMobile"> <a href="portfolio.html">portfolio</a></li>
+      <li class="hideOnMobile"> <a href="contact.html">contact</a></li>
+      <li class="menu-button" onclick=showSidebar()> <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> </a> </li>
+    </ul>
+  </nav>
+
+  <div id="main-contain"> 
+    <div class="heading"> 
+      <div> <p class="my-name">Matthew Vollo</p> </div>
+      <div> <p class="my-name-description">Software Engineering, Web Design & Writing</p> </div>
+    </div>
+  
+    <div class="subheading"> 
+      <div>
+        <p class="subheading-text"> Hello! I&#8217;m Matt, a programmer specializing in bringing creative thoughts 
+          to life through digital mediums.</p>
+      </div>
+      <div class="buttons"> 
+        <a href="portfolio.html"> <button class="button-portfolio" type="button"> My Portfolio </button></a>
+        <a href="contact.html"> <button class="button-contact" type="button"> Contact Me </button> </a>
+      </div>
+    </div> 
+
+  </div>
+  
+
+  
+  
+
+
+
+
+  
+  <!-- JS Code -->
+  <script> 
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!--Important Meta Tags-->
+  <meta name="author" content="Matthew Vollo">
+  <meta name="description" content="My own portfolio website. Version III">
+  <meta name="keywords" content="HTML, CSS, Javascript">
+
+  <!--Favicon (that was easier than I thought...)-->
+  <link rel="icon" type="image/png" href="mv96.png"> 
+  <title>Portfolio</title>
+
+  <link rel="canonical" href="index.html">
+  <link rel="stylesheet" href="stylesheet.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;600&display=swap" rel="stylesheet">
+
+  
+</head>
+<body>
+  <nav> 
+    <ul class="sidebar">
+      <li onclick=hideSidebar()> <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+      <li> <a class="title" href="index.html">Matthew Vollo</a></li>
+      <li> <a href="index.html">home</a></li>
+      <li> <a href="about.html">about me</a></li>
+      <li> <a class="here" href="portfolio.html">portfolio</a></li>
+      <li> <a href="contact.html">contact</a></li>
+    </ul>
+    <ul>
+      <li> <a class="title" href="index.html">Matthew Vollo</a></li>
+      <li class="hideOnMobile"> <a href="index.html">home</a></li>
+      <li class="hideOnMobile"> <a href="about.html">about me</a></li>
+      <li class="hideOnMobile"> <a class="here"  href="portfolio.html">portfolio</a></li>
+      <li class="hideOnMobile"> <a href="contact.html">contact</a></li>
+      <li class="menu-button" onclick=showSidebar()> <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> </a> </li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <div class="portfolio-test"> 
+      <!-- The Portfolio Section-->
+      <div class="contact-text"> 
+        <p class="contact-title"> Portfolio</p>
+        <p class="portfolio-text"> My diverse interests have driven me to explore various fields throughout my professional career. 
+          I have work experience in the insurance industry, in independent film, and at Columbia University. As a passionate professional, 
+          I thrive on quickly mastering new skills and tackling challenges to drive innovation and deliver exceptional results.</p>
+        <p class="portfolio-text"> Currently, I am working as a freelance web and UI designer.</p>
+        <p class="portfolio-text"> Click here to see my full <a href="mv_resume.pdf" target="_blank">resume</a>.</p>
+      </div>
+
+      <div class="contact-text"> 
+        <p class="portfolio-subheading">Skills</p>
+        <p class="portfolio-text">Coding Languages: Python, Java, HTML/CSS, JavaScript, C</p>
+        <p class="portfolio-text">Software: Figma, Blender, Godot</p>
+      </div>
+  
+      <div class="contact-text"> 
+        <p class="portfolio-subheading">UI &#38; Web Design</p>
+        <p class="portfolio-text"> Since graduating college, I&#39;ve worked as a freelance web/UI designer. I&#39;ve collaborated with a diverse array of clients, from small businesses to startups, in order to craft modern, visually appealing websites. 
+          I work hard to ensure that the websites I create for my clients both properly express their brand identity and reach as wide of an audience as possible. </p>
+        <p class="portfolio-text"> My creative process first involves wireframing and making mockups in Figma. I then create the actual websites either by coding them from hand using HTML, CSS and JavaScript, or by using a CMS of a client&#39;s choice (Wix, Squarespace, Wordpress, etc.).</p>
+        <p class="portfolio-text"> You can find my full visual portfolio at <a href="https://www.behance.net/matthewvollo/projects" target="_blank"> Behance</a>.</p>
+        <p class="portfolio-text"> To see my web design works specifically, check out my profile on <a href="https://dribbble.com/MVollo" target="_blank"> Dribbble</a>.</p>
+      </div>
+  
+      <div class="contact-text"> 
+        <p class="portfolio-subheading">Writing</p>
+        <p class="portfolio-text"> My love for telling stories stems from my deep passion for writing. It&#39;s the simplest, yet most effective communicative medium we have in today&#39;s age.
+          I&#39;ve written several articles about contemporary topics such as artificial intelligence, the evolution of art, and politics (both national and international). </p>
+        <p class="portfolio-text"> If you would like to read some of my more recent work, check out my <a href="https://medium.com/@vollomatthew" target="_blank">Medium</a>.</p>
+        <p class="portfolio-text"> Some of my previous works: </p>
+        <p class="portfolio-text"> <a href="Writing Portfolio/Dec2022 FakingAI.pdf">Faking AI and AI "Magic"</a> (Dec 2022)</p>
+        <p class="portfolio-text"> <a href="Writing Portfolio/Oct2022 AoAIReview.pdf">Book Review: Atlas of AI</a> (Dec 2022)</p>
+        <p class="portfolio-text"> <a href="Writing Portfolio/Sep2022, Policy Brief .pdf">Addressing online extremism and radicalization in relations to mass public shootings in Norway</a> (Oct 2022)</p>
+        <p class="portfolio-text"> <a href="Writing Portfolio/May2022 GandT.pdf">Broken Mouths and Bloodied Beds: Grodek  &#38; Tynset</a> (May 2022)</p>
+        </div>
+
+        <div class="contact-text"> 
+          <p class="portfolio-subheading">Digital Art &#38; Other Projects</p>
+          <p class="portfolio-text"> Though writing is a deep love of mine, I&#39;m always looking to find new ways of creative expression. 
+            This drive has led me to experiment with a variety of different digital mediums, including 3D modeling and gamedev. I have experience with software 
+            such as Blender, Nomad Sculpt and Unreal Engine. 
+          </p>
+          <p class="portfolio-text">You can find my digital art <a href="https://www.behance.net/matthewvollo/projects" target="_blank"> here</a>.</p>
+          <p class="portfolio-text">If you would like to see some of my other projects, please feel free look at my <a href="https://github.com/VAutomata1984" target="_blank">Github</a>.</p>
+        </div>
+  </div>
+
+  </div>
+  
+  
+  <footer class="footer"> 
+        <div class="container"> 
+          <div class="row"> 
+            <div class="footer-col"> 
+              <div class="social-links">
+                <a href="https://github.com/VAutomata1984" target="_blank"> <img class="icon" src="Footer/github.png"> </a>
+                <a href="https://www.behance.net/matthewvollo/projects" target="_blank"> <img class="icon" src="Footer/behance.png"> </a>
+                <a href="https://www.linkedin.com/in/matthewvollo/" target="_blank"> <img class="icon" src="Footer/linkedin.png"> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+  </footer>
+    
+    
+
+
+  
+  
+  
+
+
+  
+  
+
+
+
+  <!-- JS Code -->
+  <script> 
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+    }
+
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+  
+  
+</body>
+</html>
