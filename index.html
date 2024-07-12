@@ -8,12 +8,12 @@
 
   <!--Important Meta Tags-->
   <meta name="author" content="Matthew Vollo">
-  <meta name="description" content="My own portfolio website. Version IV">
+  <meta name="description" content="My own portfolio website. Version III">
   <meta name="keywords" content="HTML, CSS, Javascript">
 
   <!--Favicon (that was easier than I thought...)-->
   <link rel="icon" type="image/png" href="mv96.png"> 
-  <title>Matthew Vollo</title>
+  <title>Matthew Vollo, Website III</title>
 
   <link rel="canonical" href="index.html">
   <link rel="stylesheet" href="stylesheet.css">
@@ -24,6 +24,8 @@
 
 </head>
 <body>
+  
+
   <!-- Navbar -->
   <nav> 
     <ul class="sidebar">
@@ -49,7 +51,7 @@
       <div> <p class="my-name">Matthew Vollo</p> </div>
       <div> <p class="my-name-description">Software Engineering, Web Design & Writing</p> </div>
     </div>
-  
+
     <div class="subheading"> 
       <div>
         <p class="subheading-text"> Hello! I&#8217;m Matt, a programmer specializing in bringing creative thoughts 
@@ -62,17 +64,15 @@
     </div> 
 
   </div>
+
+  <!-- HTML Canvas Code -->
+  <canvas id="starryBackground"></canvas>
+  <script src="stars.js"></script>
   
+  <!-- This comment is a test.-->
 
-  
-  
-
-
-
-
-  
-  <!-- JS Code -->
-  <script> 
+   <!-- JS Code -->
+   <script> 
     function showSidebar(){
       const sidebar = document.querySelector('.sidebar')
       sidebar.style.display = 'flex'
