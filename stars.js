@@ -15,7 +15,7 @@ class Star {
         this.y = Math.random() * canvas.height;
         this.radius = Math.random() * 2.5; // was 1.5 
         this.alpha = Math.random();
-        this.speed = Math.random() * 0.5 + 0.2;
+        this.speed = Math.random() * 0.2 + 0.2; // OG:  * 0.5 + 0.2 
     }
 
     draw() {
@@ -34,7 +34,7 @@ class Star {
             this.y = 0;
             this.x = Math.random() * canvas.width;
         }
-        this.alpha = Math.random() * 0.5 + 0.5;
+        this.alpha = Math.random() * 0.5 + 0.5; 
     }
 }
 
