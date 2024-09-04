@@ -190,6 +190,13 @@ a.here{
   overflow-wrap: break-word;
 }
 
+::selection {
+  /* Change highlight background color to black */
+  background: rgb(216, 58, 58);
+  /* Change highlight text color to red */
+  color: #ffffff;
+}
+
 .contact-title, .portfolio-heading{
   font-size: 40px;
   margin-bottom: 30px;
@@ -228,6 +235,8 @@ a.here{
 .about-text{
   padding-bottom: 150px;
 }
+
+
 
 /* Footer styles */
 /* Main content area should take up remaining space */
