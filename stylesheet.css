@@ -14,7 +14,7 @@ body{
 p {
   font-family: 'Outfit', sans-serif;
   font-weight: 300;
-  font-size: 1em;
+  font-size: 1.05em; 
 }
 
 /* HTML Canvas */ 
@@ -192,7 +192,7 @@ a.here{
 
 ::selection {
   /* Change highlight background color to black */
-  background: rgb(216, 58, 58);
+  background: rgb(31, 50, 80);
   /* Change highlight text color to red */
   color: #ffffff;
 }
