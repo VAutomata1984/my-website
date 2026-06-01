@@ -7,7 +7,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 const stars = [];
-const numberOfStars = 100;
+const numberOfStars = 120;
 
 class Star {
     constructor() {
@@ -23,10 +23,10 @@ class Star {
         ctx.globalAlpha = this.alpha;
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-        ctx.fillStyle = 'white';
+        ctx.fillStyle = '#cbd2fc';
         ctx.fill();
         ctx.restore();
-    }
+    }xw
 
     update() {
         this.y += this.speed;

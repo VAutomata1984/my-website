@@ -2,7 +2,9 @@
   margin: 0; 
   padding: 0;
   font-family: 'Outfit', sans-serif;
+  overscroll-behavior: none; /* Note, I need to do more with this later... */ 
 }
+
 
 body{
   display: flex;
@@ -24,7 +26,6 @@ canvas{
   left: 0;
   pointer-events: none; /* Allows clicks to pass through the canvas */
 }
-
 
 
 #main-contain {
@@ -150,7 +151,7 @@ a.here{
   padding: 0 30px 0 30px;
 }
 
-.button-portfolio, .button-contact{
+.button-contact{
   /* background-color:white; */
   background-color: transparent;
   color: white; /* Was originally black */ 
@@ -170,17 +171,44 @@ a.here{
   vertical-align: top;
 } 
 
-.button-portfolio:hover, .button-contact:hover{
+.button-contact:hover{
   opacity: 0.6;
   color: rgba(255, 255, 255, 0.891); /* Was originally rgb(24, 24, 24); */ 
   border: 2px solid rgba(255, 255, 255, 0.891); /* Was originally rgb(24, 24, 24); */ 
 }
 
+.button-portfolio {
+  /* background-color:white; */
+  background-color: whitesmoke;
+  color: rgb(0, 0, 0); /* Was originally black */ 
+  border: 2px solid rgb(0, 0, 0); /* Was originally black */ 
+  border-radius: 50px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 10px;
+  transition: opacity 0.15s;
+  font-size: 16px;
+
+
+  padding-top: 12px;
+  padding-bottom: 12px; 
+  padding-left: 15px;
+  padding-right: 16px; 
+  vertical-align: top;
+} 
+
+.button-portfolio:hover{
+  opacity: 0.6;
+  color: rgba(67, 57, 57, 0.891); /* Was originally rgb(24, 24, 24); */ 
+  border: 2px solid rgba(255, 255, 255, 0.891); /* Was originally rgb(24, 24, 24); */ 
+}
+
+
 
 /* Contact Page */ 
 /* Contact and Portfolio Page Code */ 
 .contact-text, .portfolio-section{
-  margin-top: 80px;
+  margin-top: 20px;
   margin-bottom: 50px;
   width: 90%;
   max-width: 700px;
@@ -192,7 +220,7 @@ a.here{
 
 ::selection {
   /* Change highlight background color to black */
-  background: rgb(31, 50, 80);
+  background: rgb(107, 114, 249);
   /* Change highlight text color to red */
   color: #ffffff;
 }
