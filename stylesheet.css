@@ -1,0 +1,383 @@
+/* Navbar Styles */ 
+*{
+  font-family: Palatino;
+}
+
+html, body {
+  overflow-x: hidden;
+  background-color: rgb(3, 3, 3);
+}
+
+body{
+  overflow-x: hidden;
+}
+
+
+#custom_navbar{
+  background-color: rgb(3, 3, 3);
+}
+
+#custom_navbar .nav-link{
+  text-shadow:
+  -1px -1px 0 rgba(255,255,255,0.4),
+   2px 2px 0 rgba(0,0,0,0.9),
+   4px 4px 6px rgba(0,0,0,0.8);
+
+  background:
+    linear-gradient(
+      transparent 60%,
+      #00b49b 60%,
+      #00b49b 85%,
+      transparent 65%
+    );
+}
+
+#custom_navbar .nav-link:hover{
+  color:  #00b49b;
+}
+
+#custom_navbar .nav-link.active{
+  font-weight: bold;
+}
+
+#logo {
+  color: #F0EAD6;
+  font-weight: 500;
+  text-shadow:
+  -1px -1px 0 rgba(255,255,255,0.4),
+   2px 2px 0 rgba(0,0,0,0.9),
+   4px 4px 6px rgba(0,0,0,0.8)
+}
+
+/* Navbar Styles - Dropdown Menu */ 
+
+.dropdown-menu-color{
+  background-color: rgb(3, 3, 3);
+}
+
+.dropdown-item{
+  background-color: rgb(3, 3, 3);
+  color: #F0EAD6;
+}
+
+.dropdown-item:hover{
+  background-color: #00b49b;
+}
+
+.page-title{
+  color: #F0EAD6;
+}
+
+/* Main Page Styles */ 
+
+#container{
+  min-height: 100vh;
+  background-color: rgb(3, 3, 3);
+  padding: 20px;
+}
+
+
+/* Bootstrap Grid Styles */ 
+
+.portfolio-container{
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+
+.display-project{
+  color: #F0EAD6;
+}
+
+.display-project{
+  width: 100%;
+  height: 100%;
+  background-color: #F0EAD6;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.display-project:hover{
+  background-color: white;
+}
+
+.display-project img{
+  width: 100%; 
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+
+.display-project img.art {
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.project-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  color: black;
+}
+
+.project-title, .project-label{
+  display: inline-block;
+}
+
+.project-title{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.project-label{
+  font-size: 10px;
+  font-weight: 200;
+  background-color: gray;
+  color: white;
+  border-radius: 10px;
+  padding: 2px 8px 2px 8px;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.project-label-orange{
+  background-color: #c36739;
+  font-size: 10px;
+  font-weight: 200;
+  color: white;
+  border-radius: 10px;
+  padding: 2px 8px 2px 8px;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.project-label-red{
+  background-color: #c34239;
+  font-size: 10px;
+  font-weight: 200;
+  color: white;
+  border-radius: 10px;
+  padding: 2px 8px 2px 8px;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.project-description{
+  color: black;
+  font-size: 14px;
+  font-weight: 300;
+  min-height: 30px;
+}
+
+/* Bootstrap Grid Styles - Art Grid */ 
+
+#FullImageView{
+  display: none;
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  text-align: center;
+} 
+
+#FullImage{
+  padding: 24px;
+  max-width: 98%;
+  max-height: 98%;
+}
+
+#CloseButton{
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 2rem;
+  color: #F0EAD6;
+  cursor: pointer;
+}
+
+/* About/Contact Page */
+
+.about-text{
+  color: #F0EAD6;
+  font-size: 18px;
+}
+
+.about-link{
+  color: #F0EAD6;
+}
+
+.about-link:hover{
+  color: #00b49b;
+  cursor: pointer;
+}
+
+#mv_image{
+  height: 100px;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+
+  animation-name: myAnimation;
+  animation-duration: 5s;
+  animation-iteration-count:infinite;
+}
+
+/* Homepage Styles - "Item Select"  */ 
+
+.main-gif{
+  width: 300px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.side-gif{
+  width: 150px;
+  height: auto;
+  opacity: 0.6;
+}
+
+.inventory{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inventory-item-title{
+  font-size: 28px;
+  font-weight: 700;
+  color: #F0EAD6;
+  display: flex; 
+  justify-content: center;
+
+  text-shadow: 2px 2px 4px gray;
+}
+
+#option-desc{
+  color: #F0EAD6;
+  font-size: 18px;
+}
+
+#enter-button, #about-button{
+  margin-top: 20px;
+  padding: 12px 28px 12px 28px;
+  background-color: rgb(3, 3, 3);
+  color: #F0EAD6;
+  border: 2px solid #4F8FE6; 
+  border-radius: 5px;
+  text-shadow: 1px 1px 2px gray;
+
+  box-shadow:
+    0 0 1px #4F8FE6,
+    0 0 10px rgba(79,143,230,0.8);
+}
+
+#enter-button:hover, #about-button:hover{
+  font-weight: 900;
+}
+
+#enter-button:active, #about-button:active{
+  color: #00b49b;
+}
+
+@keyframes myAnimation{
+  from {box-shadow:
+    0 0 0px #4F8FE6,
+    0 0 0px rgba(79,143,230,0.8);
+  }
+  to {box-shadow:
+    0 0 0px #4F8FE6,
+    0 0 30px rgba(79,143,230,0.8);
+  }
+}
+
+@keyframes myAnimation2{
+  from {box-shadow:
+    0 0 0px #4F8FE6,
+    0 0 5px rgba(79,143,230,0.8);
+  }
+  to {box-shadow:
+    0 0 0px #4F8FE6,
+    0 0 15px rgba(79,143,230,0.8);
+  }
+}
+
+#select-box{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 5px;
+  border-radius: 5px;
+
+  width: fit-content;
+  height: fit-content;
+
+  animation-name: myAnimation;
+  animation-duration: 1s;
+  animation-iteration-count:infinite;
+
+  box-shadow:
+    0 0 2px #4F8FE6,
+    0 0 10px rgba(79,143,230,0.8);
+
+}
+
+#prev-btn, #next-btn{
+  font-size: 30px;
+  font-weight: 500;
+  color: #F0EAD6;
+  background-color: transparent;
+  border: none;
+}
+
+#prev-btn:active, #next-btn:active{
+  font-weight: 900;
+}
+
+.links{
+  color: #F0EAD6;
+}
+
+.links:hover{
+  color: #00b49b;
+}
+
+.key-item{
+  color: #4F8FE6;
+  font-weight: 700;
+  /* #00b49b; */
+}
+
+.no-AI{
+  font-weight: 800;
+}
+
+/* Homepage Styles - Responsive Design*/ 
+
+@media (max-width: 768px) {
+  .side-gif{
+    width: 45px;
+  }
+
+  .main-gif{
+    width: 120px;
+  }
+
+  #option-desc{
+    color: #F0EAD6;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1000px) {
+  #custom_navbar .nav-link{
+    text-shadow: none;
+    background: none;
+  }
+}
