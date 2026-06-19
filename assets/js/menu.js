@@ -68,6 +68,24 @@ $(document).ready(function(){
     displayPortfolio()
   })
 
+  /* Item Select - For Mobile */ 
+  $("#left-option").click(function(){
+    currentIndex--;
+    if (currentIndex < 0){ 
+      currentIndex = portfolio.length - 1;
+    }
+    displayPortfolio()
+  })
+
+  $("#right-option").click(function(){
+    currentIndex++;
+    if (currentIndex >= portfolio.length){ 
+      currentIndex = 0;
+    }
+    displayPortfolio()
+  })
+
+
  $("#enter-button").mouseenter(function() {
     $(this).html(">ENTER");
   });
