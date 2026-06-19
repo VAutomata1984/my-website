@@ -338,11 +338,13 @@ body{
 }
 
 .key-item{
-  color: #00b49b;
+  color: #4F8FE6;
+  font-weight: 700;
+  /* #00b49b; */
 }
 
 .no-AI{
-  color: #9c313e;
+  font-weight: 800;
 }
 
 /* Homepage Styles - Responsive Design*/ 
