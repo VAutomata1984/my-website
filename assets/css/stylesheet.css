@@ -241,6 +241,10 @@ body{
   opacity: 0.6;
 }
 
+.side-gif:hover{
+  cursor: pointer;
+}
+
 .inventory{
   display: flex;
   flex-direction: column;
@@ -380,4 +384,24 @@ body{
     text-shadow: none;
     background: none;
   }
+}
+
+@media (min-width: 1920px) {
+  .side-gif{
+    width: 180px;
+  }
+
+  .main-gif{
+    width: 350px;
+    height: 250px;
+  }
+
+  .inventory-item-title{
+    font-size: 50px;
+  }
+
+  #option-desc{
+    font-size: 24px;
+  }
+  
 }
