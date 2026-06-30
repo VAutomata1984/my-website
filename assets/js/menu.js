@@ -111,8 +111,12 @@ $(document).ready(function(){
     if (event.key === "ArrowRight") {
         $("#next-btn").click();
     }
+    
+    if (event.key == "Enter") {
+        $("#enter-button").click()
+    }
 
-});
+  });
 
   displayPortfolio()
 
