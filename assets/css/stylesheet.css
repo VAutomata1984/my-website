@@ -128,7 +128,7 @@ body{
 }
 
 .project-title{
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -166,9 +166,9 @@ body{
 }
 
 .project-description{
-  color: black;
+  color: rgb(65, 65, 65);
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 200;
   min-height: 30px;
 }
 
