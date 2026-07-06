@@ -379,7 +379,7 @@ body{
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 990px) {
   #custom_navbar .nav-link{
     text-shadow: none;
     background: none;
